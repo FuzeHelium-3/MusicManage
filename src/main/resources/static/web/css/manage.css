@@ -1,0 +1,10 @@
+.side-nav{
+    width:15%;
+    height: 100%;
+    float: left;
+}
+.main-content{
+    width:70%;
+    height:100%;
+    float: left;
+}

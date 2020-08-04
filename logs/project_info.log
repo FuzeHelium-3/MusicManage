@@ -1,0 +1,372 @@
+2020-07-25 20:26:55.266 INFO  --- [  restartedMain] c.s.musicmanage.MusicmanageApplication   : Starting MusicmanageApplication on LAPTOP-NAQKQH2N with PID 165280 (C:\Users\SupremacyXXXXX\Desktop\星网锐捷\Codes\MusicManage\target\classes started by SupremacyXXXXX in C:\Users\SupremacyXXXXX\Desktop\星网锐捷\Codes\MusicManage)
+2020-07-25 20:26:55.287 DEBUG --- [  restartedMain] c.s.musicmanage.MusicmanageApplication   : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-25 20:26:55.288 INFO  --- [  restartedMain] c.s.musicmanage.MusicmanageApplication   : No active profile set, falling back to default profiles: default
+2020-07-25 20:26:55.596 INFO  --- [  restartedMain] o.s.boot.devtools.restart.ChangeableUrls : The Class-Path manifest attribute in D:\Maven\repository\com\sun\xml\bind\jaxb-impl\2.1\jaxb-impl-2.1.jar referenced one or more files that do not exist: file:/D:/Maven/repository/com/sun/xml/bind/jaxb-impl/2.1/jaxb-api.jar,file:/D:/Maven/repository/com/sun/xml/bind/jaxb-impl/2.1/activation.jar,file:/D:/Maven/repository/com/sun/xml/bind/jaxb-impl/2.1/jsr173_1.0_api.jar,file:/D:/Maven/repository/com/sun/xml/bind/jaxb-impl/2.1/jaxb1-impl.jar
+2020-07-25 20:26:55.597 INFO  --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-25 20:26:55.598 INFO  --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-25 20:27:00.225 INFO  --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-25 20:27:00.249 INFO  --- [  restartedMain] o.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-25 20:27:00.251 INFO  --- [  restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2020-07-25 20:27:00.252 INFO  --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-25 20:27:00.511 INFO  --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-25 20:27:00.511 INFO  --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4912 ms
+2020-07-25 20:27:03.028 INFO  --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-25 20:27:03.976 INFO  --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-25 20:27:04.010 INFO  --- [  restartedMain] o.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-25 20:27:04.050 INFO  --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-25 20:27:04.068 INFO  --- [  restartedMain] c.s.musicmanage.MusicmanageApplication   : Started MusicmanageApplication in 12.436 seconds (JVM running for 17.575)
+2020-07-25 20:27:12.324 INFO  --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-25 20:27:12.325 INFO  --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-25 20:27:12.341 INFO  --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-07-25 20:27:15.153 INFO  --- [nio-8080-exec-5] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:27:15.154 INFO  --- [nio-8080-exec-5] com.starnet.musicmanage.aop.ApiAspect    : |  url=/users
+2020-07-25 20:27:15.155 INFO  --- [nio-8080-exec-5] com.starnet.musicmanage.aop.ApiAspect    : |  method=GET
+2020-07-25 20:27:15.155 INFO  --- [nio-8080-exec-5] com.starnet.musicmanage.aop.ApiAspect    : |  ip=0:0:0:0:0:0:0:1
+2020-07-25 20:27:15.158 INFO  --- [nio-8080-exec-5] com.starnet.musicmanage.aop.ApiAspect    : |  class_method=com.starnet.musicmanage.controller.UserController.getUserList
+2020-07-25 20:27:15.158 INFO  --- [nio-8080-exec-5] com.starnet.musicmanage.aop.ApiAspect    : |  args={}
+2020-07-25 20:27:15.158 INFO  --- [nio-8080-exec-5] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:27:15.195 INFO  --- [nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-25 20:27:16.333 INFO  --- [nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-25 20:27:16.359 DEBUG --- [nio-8080-exec-5] c.s.m.dao.SysUserMapper.selectAll        : ==>  Preparing: select id, userName, sex, age, mobile_phone, address, `password`, `admin` from sys_user
+2020-07-25 20:27:16.395 DEBUG --- [nio-8080-exec-5] c.s.m.dao.SysUserMapper.selectAll        : ==> Parameters: 
+2020-07-25 20:27:16.815 DEBUG --- [nio-8080-exec-5] c.s.m.dao.SysUserMapper.selectAll        : <==      Total: 5
+2020-07-25 20:27:16.825 INFO  --- [nio-8080-exec-5] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:27:16.826 INFO  --- [nio-8080-exec-5] com.starnet.musicmanage.aop.ApiAspect    : |   return=JsonResult(status=200, msg=OK, data=[SysUser [Hash = 252886956, id=8, username=test, sex=1, age=21, mobilePhone=110, address=fuzhoudaxue, password=123456, admin=1, serialVersionUID=1], SysUser [Hash = 1967198265, id=16, username=hxy, sex=0, age=22, mobilePhone=13615011136, address=fuzhoudaxue, password=123456, admin=0, serialVersionUID=1], SysUser [Hash = 1948279911, id=22, username=admin, sex=1, age=1, mobilePhone=123123, address=11111, password=111, admin=null, serialVersionUID=1], SysUser [Hash = 1994985782, id=35, username=adcjkljkl, sex=0, age=21, mobilePhone=1, address=fuzhoudaxue, password=123456, admin=null, serialVersionUID=1], SysUser [Hash = 1813790616, id=36, username=fdafdas, sex=1, age=1, mobilePhone=22, address=456, password=sss, admin=null, serialVersionUID=1]])
+2020-07-25 20:27:16.826 INFO  --- [nio-8080-exec-5] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:27:20.311 INFO  --- [nio-8080-exec-1] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:27:20.312 INFO  --- [nio-8080-exec-1] com.starnet.musicmanage.aop.ApiAspect    : |  url=/linuxes
+2020-07-25 20:27:20.312 INFO  --- [nio-8080-exec-1] com.starnet.musicmanage.aop.ApiAspect    : |  method=GET
+2020-07-25 20:27:20.312 INFO  --- [nio-8080-exec-1] com.starnet.musicmanage.aop.ApiAspect    : |  ip=0:0:0:0:0:0:0:1
+2020-07-25 20:27:20.312 INFO  --- [nio-8080-exec-1] com.starnet.musicmanage.aop.ApiAspect    : |  class_method=com.starnet.musicmanage.controller.LinuxController.getAllLinuxList
+2020-07-25 20:27:20.312 INFO  --- [nio-8080-exec-1] com.starnet.musicmanage.aop.ApiAspect    : |  args={}
+2020-07-25 20:27:20.312 INFO  --- [nio-8080-exec-1] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:27:20.320 DEBUG --- [nio-8080-exec-1] c.s.m.dao.LinuxMapper.selectAll          : ==>  Preparing: select id, `name`, `status`, ad, `no` from linux
+2020-07-25 20:27:20.320 DEBUG --- [nio-8080-exec-1] c.s.m.dao.LinuxMapper.selectAll          : ==> Parameters: 
+2020-07-25 20:27:20.437 DEBUG --- [nio-8080-exec-1] c.s.m.dao.LinuxMapper.selectAll          : <==      Total: 2
+2020-07-25 20:27:20.437 INFO  --- [nio-8080-exec-1] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:27:20.437 INFO  --- [nio-8080-exec-1] com.starnet.musicmanage.aop.ApiAspect    : |   return=JsonResult(status=200, msg=OK, data=[Linux(id=1, name=服务器1, status=0, ad=限时免费！, no=linux001), Linux(id=2, name=服务器2, status=0, ad=限时免费！, no=linux002)])
+2020-07-25 20:27:20.438 INFO  --- [nio-8080-exec-1] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:27:23.854 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:27:23.854 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : |  url=/musics
+2020-07-25 20:27:23.855 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : |  method=GET
+2020-07-25 20:27:23.855 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : |  ip=0:0:0:0:0:0:0:1
+2020-07-25 20:27:23.855 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : |  class_method=com.starnet.musicmanage.controller.MusicController.getMusicList
+2020-07-25 20:27:23.855 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : |  args={}
+2020-07-25 20:27:23.855 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:27:23.860 DEBUG --- [nio-8080-exec-7] c.s.m.dao.MusicMapper.selectAll          : ==>  Preparing: select id, `name`, singer, detail, `status` from music
+2020-07-25 20:27:23.861 DEBUG --- [nio-8080-exec-7] c.s.m.dao.MusicMapper.selectAll          : ==> Parameters: 
+2020-07-25 20:27:23.920 DEBUG --- [nio-8080-exec-7] c.s.m.dao.MusicMapper.selectAll          : <==      Total: 5
+2020-07-25 20:27:23.920 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:27:23.920 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : |   return=JsonResult(status=200, msg=OK, data=[Music(id=1, name=watch, singer=Billie Eilish, detail=null, status=0), Music(id=2, name=Falling Down , singer=Muse , detail=null, status=0), Music(id=3, name=Together, singer=Sia, detail=null, status=0), Music(id=4, name=对不起, singer=周杰伦, detail=所属专辑：《依然范特西》, status=1), Music(id=5, name=奉献, singer=韩寒, detail=飞驰人生 电影原声带, status=0)])
+2020-07-25 20:27:23.920 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:27:29.303 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:27:29.303 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |  url=/linux
+2020-07-25 20:27:29.304 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |  method=DELETE
+2020-07-25 20:27:29.304 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |  ip=0:0:0:0:0:0:0:1
+2020-07-25 20:27:29.304 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |  class_method=com.starnet.musicmanage.controller.LinuxController.delLinuxDevice
+2020-07-25 20:27:29.304 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |  args={ids=[1]}
+2020-07-25 20:27:29.304 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:27:29.307 DEBUG --- [nio-8080-exec-6] c.s.m.dao.LinuxMapper.deleteByPrimaryKey : ==>  Preparing: delete from linux where id = ?
+2020-07-25 20:27:29.308 DEBUG --- [nio-8080-exec-6] c.s.m.dao.LinuxMapper.deleteByPrimaryKey : ==> Parameters: 1(Integer)
+2020-07-25 20:27:29.576 DEBUG --- [nio-8080-exec-6] c.s.m.dao.LinuxMapper.deleteByPrimaryKey : <==    Updates: 1
+2020-07-25 20:27:29.576 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:27:29.576 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |   return=JsonResult(status=200, msg=OK, data=null)
+2020-07-25 20:27:29.577 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:27:32.046 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:27:32.047 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |  url=/musics
+2020-07-25 20:27:32.047 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |  method=GET
+2020-07-25 20:27:32.049 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |  ip=0:0:0:0:0:0:0:1
+2020-07-25 20:27:32.049 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |  class_method=com.starnet.musicmanage.controller.MusicController.getMusicList
+2020-07-25 20:27:32.049 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |  args={}
+2020-07-25 20:27:32.049 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:27:32.049 DEBUG --- [nio-8080-exec-2] c.s.m.dao.MusicMapper.selectAll          : ==>  Preparing: select id, `name`, singer, detail, `status` from music
+2020-07-25 20:27:32.050 DEBUG --- [nio-8080-exec-2] c.s.m.dao.MusicMapper.selectAll          : ==> Parameters: 
+2020-07-25 20:27:32.053 DEBUG --- [nio-8080-exec-2] c.s.m.dao.MusicMapper.selectAll          : <==      Total: 5
+2020-07-25 20:27:32.054 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:27:32.054 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |   return=JsonResult(status=200, msg=OK, data=[Music(id=1, name=watch, singer=Billie Eilish, detail=null, status=0), Music(id=2, name=Falling Down , singer=Muse , detail=null, status=0), Music(id=3, name=Together, singer=Sia, detail=null, status=0), Music(id=4, name=对不起, singer=周杰伦, detail=所属专辑：《依然范特西》, status=1), Music(id=5, name=奉献, singer=韩寒, detail=飞驰人生 电影原声带, status=0)])
+2020-07-25 20:27:32.054 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:36:11.712 INFO  --- [  restartedMain] c.s.musicmanage.MusicmanageApplication   : Starting MusicmanageApplication on LAPTOP-NAQKQH2N with PID 169744 (C:\Users\SupremacyXXXXX\Desktop\星网锐捷\Codes\MusicManage\target\classes started by SupremacyXXXXX in C:\Users\SupremacyXXXXX\Desktop\星网锐捷\Codes\MusicManage)
+2020-07-25 20:36:11.715 DEBUG --- [  restartedMain] c.s.musicmanage.MusicmanageApplication   : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-25 20:36:11.716 INFO  --- [  restartedMain] c.s.musicmanage.MusicmanageApplication   : No active profile set, falling back to default profiles: default
+2020-07-25 20:36:11.790 INFO  --- [  restartedMain] o.s.boot.devtools.restart.ChangeableUrls : The Class-Path manifest attribute in D:\Maven\repository\com\sun\xml\bind\jaxb-impl\2.1\jaxb-impl-2.1.jar referenced one or more files that do not exist: file:/D:/Maven/repository/com/sun/xml/bind/jaxb-impl/2.1/jaxb-api.jar,file:/D:/Maven/repository/com/sun/xml/bind/jaxb-impl/2.1/activation.jar,file:/D:/Maven/repository/com/sun/xml/bind/jaxb-impl/2.1/jsr173_1.0_api.jar,file:/D:/Maven/repository/com/sun/xml/bind/jaxb-impl/2.1/jaxb1-impl.jar
+2020-07-25 20:36:11.790 INFO  --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-25 20:36:11.790 INFO  --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-25 20:36:13.681 INFO  --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-25 20:36:13.694 INFO  --- [  restartedMain] o.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-25 20:36:13.695 INFO  --- [  restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2020-07-25 20:36:13.695 INFO  --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-25 20:36:13.804 INFO  --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-25 20:36:13.804 INFO  --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2014 ms
+2020-07-25 20:36:14.643 INFO  --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-25 20:36:15.099 INFO  --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-25 20:36:15.117 INFO  --- [  restartedMain] o.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-25 20:36:15.151 INFO  --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-25 20:36:15.164 INFO  --- [  restartedMain] c.s.musicmanage.MusicmanageApplication   : Started MusicmanageApplication in 4.203 seconds (JVM running for 6.154)
+2020-07-25 20:36:21.248 INFO  --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-25 20:36:21.248 INFO  --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-25 20:36:21.265 INFO  --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-07-25 20:36:46.592 INFO  --- [nio-8080-exec-9] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:36:46.593 INFO  --- [nio-8080-exec-9] com.starnet.musicmanage.aop.ApiAspect    : |  url=/login
+2020-07-25 20:36:46.594 INFO  --- [nio-8080-exec-9] com.starnet.musicmanage.aop.ApiAspect    : |  method=POST
+2020-07-25 20:36:46.594 INFO  --- [nio-8080-exec-9] com.starnet.musicmanage.aop.ApiAspect    : |  ip=0:0:0:0:0:0:0:1
+2020-07-25 20:36:46.597 INFO  --- [nio-8080-exec-9] com.starnet.musicmanage.aop.ApiAspect    : |  class_method=com.starnet.musicmanage.controller.UserController.userLogin
+2020-07-25 20:36:46.597 INFO  --- [nio-8080-exec-9] com.starnet.musicmanage.aop.ApiAspect    : |  args=test
+2020-07-25 20:36:46.597 INFO  --- [nio-8080-exec-9] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:36:46.627 INFO  --- [nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-25 20:36:46.797 INFO  --- [nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-25 20:36:46.807 DEBUG --- [nio-8080-exec-9] c.s.m.dao.SysUserMapper.selectByUserName : ==>  Preparing: select id, userName, sex, age, mobile_phone, address, `password`, `admin` from sys_user where userName = ?
+2020-07-25 20:36:46.832 DEBUG --- [nio-8080-exec-9] c.s.m.dao.SysUserMapper.selectByUserName : ==> Parameters: test(String)
+2020-07-25 20:36:47.064 DEBUG --- [nio-8080-exec-9] c.s.m.dao.SysUserMapper.selectByUserName : <==      Total: 1
+2020-07-25 20:36:47.071 INFO  --- [nio-8080-exec-9] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:36:47.072 INFO  --- [nio-8080-exec-9] com.starnet.musicmanage.aop.ApiAspect    : |   return=JsonResult(status=555, msg=密码错误, data=null)
+2020-07-25 20:36:47.072 INFO  --- [nio-8080-exec-9] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:37:19.356 INFO  --- [nio-8080-exec-8] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:37:19.356 INFO  --- [nio-8080-exec-8] com.starnet.musicmanage.aop.ApiAspect    : |  url=/login
+2020-07-25 20:37:19.356 INFO  --- [nio-8080-exec-8] com.starnet.musicmanage.aop.ApiAspect    : |  method=POST
+2020-07-25 20:37:19.357 INFO  --- [nio-8080-exec-8] com.starnet.musicmanage.aop.ApiAspect    : |  ip=0:0:0:0:0:0:0:1
+2020-07-25 20:37:19.357 INFO  --- [nio-8080-exec-8] com.starnet.musicmanage.aop.ApiAspect    : |  class_method=com.starnet.musicmanage.controller.UserController.userLogin
+2020-07-25 20:37:19.357 INFO  --- [nio-8080-exec-8] com.starnet.musicmanage.aop.ApiAspect    : |  args=test
+2020-07-25 20:37:19.357 INFO  --- [nio-8080-exec-8] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:37:19.358 DEBUG --- [nio-8080-exec-8] c.s.m.dao.SysUserMapper.selectByUserName : ==>  Preparing: select id, userName, sex, age, mobile_phone, address, `password`, `admin` from sys_user where userName = ?
+2020-07-25 20:37:19.359 DEBUG --- [nio-8080-exec-8] c.s.m.dao.SysUserMapper.selectByUserName : ==> Parameters: test(String)
+2020-07-25 20:37:19.360 DEBUG --- [nio-8080-exec-8] c.s.m.dao.SysUserMapper.selectByUserName : <==      Total: 1
+2020-07-25 20:37:19.360 INFO  --- [nio-8080-exec-8] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:37:19.361 INFO  --- [nio-8080-exec-8] com.starnet.musicmanage.aop.ApiAspect    : |   return=JsonResult(status=200, msg=OK, data=SysUser [Hash = 59574838, id=8, username=test, sex=1, age=21, mobilePhone=110, address=fuzhoudaxue, password=123456, admin=1, serialVersionUID=1])
+2020-07-25 20:37:19.361 INFO  --- [nio-8080-exec-8] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:37:19.640 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:37:19.640 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |  url=/users
+2020-07-25 20:37:19.640 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |  method=GET
+2020-07-25 20:37:19.640 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |  ip=0:0:0:0:0:0:0:1
+2020-07-25 20:37:19.640 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |  class_method=com.starnet.musicmanage.controller.UserController.getUserList
+2020-07-25 20:37:19.640 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |  args={}
+2020-07-25 20:37:19.640 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:37:19.642 DEBUG --- [nio-8080-exec-2] c.s.m.dao.SysUserMapper.selectAll        : ==>  Preparing: select id, userName, sex, age, mobile_phone, address, `password`, `admin` from sys_user
+2020-07-25 20:37:19.642 DEBUG --- [nio-8080-exec-2] c.s.m.dao.SysUserMapper.selectAll        : ==> Parameters: 
+2020-07-25 20:37:19.646 DEBUG --- [nio-8080-exec-2] c.s.m.dao.SysUserMapper.selectAll        : <==      Total: 5
+2020-07-25 20:37:19.648 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:37:19.648 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |   return=JsonResult(status=200, msg=OK, data=[SysUser [Hash = 1150430051, id=8, username=test, sex=1, age=21, mobilePhone=110, address=fuzhoudaxue, password=123456, admin=1, serialVersionUID=1], SysUser [Hash = 401553851, id=16, username=hxy, sex=0, age=22, mobilePhone=13615011136, address=fuzhoudaxue, password=123456, admin=0, serialVersionUID=1], SysUser [Hash = 1078082229, id=22, username=admin, sex=1, age=1, mobilePhone=123123, address=11111, password=111, admin=null, serialVersionUID=1], SysUser [Hash = 1558066012, id=35, username=adcjkljkl, sex=0, age=21, mobilePhone=1, address=fuzhoudaxue, password=123456, admin=null, serialVersionUID=1], SysUser [Hash = 155374231, id=36, username=fdafdas, sex=1, age=1, mobilePhone=22, address=456, password=sss, admin=null, serialVersionUID=1]])
+2020-07-25 20:37:19.649 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:38:51.739 INFO  --- [nio-8080-exec-3] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:38:51.739 INFO  --- [nio-8080-exec-3] com.starnet.musicmanage.aop.ApiAspect    : |  url=/login
+2020-07-25 20:38:51.740 INFO  --- [nio-8080-exec-3] com.starnet.musicmanage.aop.ApiAspect    : |  method=POST
+2020-07-25 20:38:51.740 INFO  --- [nio-8080-exec-3] com.starnet.musicmanage.aop.ApiAspect    : |  ip=0:0:0:0:0:0:0:1
+2020-07-25 20:38:51.740 INFO  --- [nio-8080-exec-3] com.starnet.musicmanage.aop.ApiAspect    : |  class_method=com.starnet.musicmanage.controller.UserController.userLogin
+2020-07-25 20:38:51.740 INFO  --- [nio-8080-exec-3] com.starnet.musicmanage.aop.ApiAspect    : |  args=admin
+2020-07-25 20:38:51.740 INFO  --- [nio-8080-exec-3] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:38:51.741 DEBUG --- [nio-8080-exec-3] c.s.m.dao.SysUserMapper.selectByUserName : ==>  Preparing: select id, userName, sex, age, mobile_phone, address, `password`, `admin` from sys_user where userName = ?
+2020-07-25 20:38:51.741 DEBUG --- [nio-8080-exec-3] c.s.m.dao.SysUserMapper.selectByUserName : ==> Parameters: admin(String)
+2020-07-25 20:38:51.742 DEBUG --- [nio-8080-exec-3] c.s.m.dao.SysUserMapper.selectByUserName : <==      Total: 1
+2020-07-25 20:38:51.743 INFO  --- [nio-8080-exec-3] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:38:51.743 INFO  --- [nio-8080-exec-3] com.starnet.musicmanage.aop.ApiAspect    : |   return=JsonResult(status=555, msg=密码错误, data=null)
+2020-07-25 20:38:51.743 INFO  --- [nio-8080-exec-3] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:39:21.870 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:39:21.870 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |  url=/login
+2020-07-25 20:39:21.871 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |  method=POST
+2020-07-25 20:39:21.871 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |  ip=0:0:0:0:0:0:0:1
+2020-07-25 20:39:21.871 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |  class_method=com.starnet.musicmanage.controller.UserController.userLogin
+2020-07-25 20:39:21.871 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |  args=hxy
+2020-07-25 20:39:21.871 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:39:21.872 DEBUG --- [nio-8080-exec-6] c.s.m.dao.SysUserMapper.selectByUserName : ==>  Preparing: select id, userName, sex, age, mobile_phone, address, `password`, `admin` from sys_user where userName = ?
+2020-07-25 20:39:21.872 DEBUG --- [nio-8080-exec-6] c.s.m.dao.SysUserMapper.selectByUserName : ==> Parameters: hxy(String)
+2020-07-25 20:39:21.873 DEBUG --- [nio-8080-exec-6] c.s.m.dao.SysUserMapper.selectByUserName : <==      Total: 1
+2020-07-25 20:39:21.873 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:39:21.873 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |   return=JsonResult(status=200, msg=OK, data=SysUser [Hash = 96504924, id=16, username=hxy, sex=0, age=22, mobilePhone=13615011136, address=fuzhoudaxue, password=123456, admin=0, serialVersionUID=1])
+2020-07-25 20:39:21.874 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:39:22.294 INFO  --- [nio-8080-exec-4] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:39:22.294 INFO  --- [nio-8080-exec-4] com.starnet.musicmanage.aop.ApiAspect    : |  url=/users
+2020-07-25 20:39:22.294 INFO  --- [nio-8080-exec-4] com.starnet.musicmanage.aop.ApiAspect    : |  method=GET
+2020-07-25 20:39:22.294 INFO  --- [nio-8080-exec-4] com.starnet.musicmanage.aop.ApiAspect    : |  ip=0:0:0:0:0:0:0:1
+2020-07-25 20:39:22.294 INFO  --- [nio-8080-exec-4] com.starnet.musicmanage.aop.ApiAspect    : |  class_method=com.starnet.musicmanage.controller.UserController.getUserList
+2020-07-25 20:39:22.295 INFO  --- [nio-8080-exec-4] com.starnet.musicmanage.aop.ApiAspect    : |  args={}
+2020-07-25 20:39:22.295 INFO  --- [nio-8080-exec-4] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:39:22.295 DEBUG --- [nio-8080-exec-4] c.s.m.dao.SysUserMapper.selectAll        : ==>  Preparing: select id, userName, sex, age, mobile_phone, address, `password`, `admin` from sys_user
+2020-07-25 20:39:22.295 DEBUG --- [nio-8080-exec-4] c.s.m.dao.SysUserMapper.selectAll        : ==> Parameters: 
+2020-07-25 20:39:22.300 DEBUG --- [nio-8080-exec-4] c.s.m.dao.SysUserMapper.selectAll        : <==      Total: 5
+2020-07-25 20:39:22.300 INFO  --- [nio-8080-exec-4] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:39:22.300 INFO  --- [nio-8080-exec-4] com.starnet.musicmanage.aop.ApiAspect    : |   return=JsonResult(status=200, msg=OK, data=[SysUser [Hash = 315528708, id=8, username=test, sex=1, age=21, mobilePhone=110, address=fuzhoudaxue, password=123456, admin=1, serialVersionUID=1], SysUser [Hash = 2136946298, id=16, username=hxy, sex=0, age=22, mobilePhone=13615011136, address=fuzhoudaxue, password=123456, admin=0, serialVersionUID=1], SysUser [Hash = 1885163593, id=22, username=admin, sex=1, age=1, mobilePhone=123123, address=11111, password=111, admin=null, serialVersionUID=1], SysUser [Hash = 581783539, id=35, username=adcjkljkl, sex=0, age=21, mobilePhone=1, address=fuzhoudaxue, password=123456, admin=null, serialVersionUID=1], SysUser [Hash = 1152746260, id=36, username=fdafdas, sex=1, age=1, mobilePhone=22, address=456, password=sss, admin=null, serialVersionUID=1]])
+2020-07-25 20:39:22.300 INFO  --- [nio-8080-exec-4] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:39:52.911 INFO  --- [nio-8080-exec-8] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:39:52.911 INFO  --- [nio-8080-exec-8] com.starnet.musicmanage.aop.ApiAspect    : |  url=/users
+2020-07-25 20:39:52.911 INFO  --- [nio-8080-exec-8] com.starnet.musicmanage.aop.ApiAspect    : |  method=GET
+2020-07-25 20:39:52.912 INFO  --- [nio-8080-exec-8] com.starnet.musicmanage.aop.ApiAspect    : |  ip=0:0:0:0:0:0:0:1
+2020-07-25 20:39:52.912 INFO  --- [nio-8080-exec-8] com.starnet.musicmanage.aop.ApiAspect    : |  class_method=com.starnet.musicmanage.controller.UserController.getUserList
+2020-07-25 20:39:52.912 INFO  --- [nio-8080-exec-8] com.starnet.musicmanage.aop.ApiAspect    : |  args={}
+2020-07-25 20:39:52.912 INFO  --- [nio-8080-exec-8] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:39:52.913 DEBUG --- [nio-8080-exec-8] c.s.m.dao.SysUserMapper.selectAll        : ==>  Preparing: select id, userName, sex, age, mobile_phone, address, `password`, `admin` from sys_user
+2020-07-25 20:39:52.913 DEBUG --- [nio-8080-exec-8] c.s.m.dao.SysUserMapper.selectAll        : ==> Parameters: 
+2020-07-25 20:39:52.921 DEBUG --- [nio-8080-exec-8] c.s.m.dao.SysUserMapper.selectAll        : <==      Total: 5
+2020-07-25 20:39:52.922 INFO  --- [nio-8080-exec-8] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:39:52.922 INFO  --- [nio-8080-exec-8] com.starnet.musicmanage.aop.ApiAspect    : |   return=JsonResult(status=200, msg=OK, data=[SysUser [Hash = 151526753, id=8, username=test, sex=1, age=21, mobilePhone=110, address=fuzhoudaxue, password=123456, admin=1, serialVersionUID=1], SysUser [Hash = 814217453, id=16, username=hxy, sex=0, age=22, mobilePhone=13615011136, address=fuzhoudaxue, password=123456, admin=0, serialVersionUID=1], SysUser [Hash = 624666456, id=22, username=admin, sex=1, age=1, mobilePhone=123123, address=11111, password=111, admin=null, serialVersionUID=1], SysUser [Hash = 1352962712, id=35, username=adcjkljkl, sex=0, age=21, mobilePhone=1, address=fuzhoudaxue, password=123456, admin=null, serialVersionUID=1], SysUser [Hash = 428769016, id=36, username=fdafdas, sex=1, age=1, mobilePhone=22, address=456, password=sss, admin=null, serialVersionUID=1]])
+2020-07-25 20:39:52.922 INFO  --- [nio-8080-exec-8] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:39:58.345 INFO  --- [nio-8080-exec-3] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:39:58.345 INFO  --- [nio-8080-exec-3] com.starnet.musicmanage.aop.ApiAspect    : |  url=/login
+2020-07-25 20:39:58.345 INFO  --- [nio-8080-exec-3] com.starnet.musicmanage.aop.ApiAspect    : |  method=POST
+2020-07-25 20:39:58.346 INFO  --- [nio-8080-exec-3] com.starnet.musicmanage.aop.ApiAspect    : |  ip=0:0:0:0:0:0:0:1
+2020-07-25 20:39:58.346 INFO  --- [nio-8080-exec-3] com.starnet.musicmanage.aop.ApiAspect    : |  class_method=com.starnet.musicmanage.controller.UserController.userLogin
+2020-07-25 20:39:58.346 INFO  --- [nio-8080-exec-3] com.starnet.musicmanage.aop.ApiAspect    : |  args=test
+2020-07-25 20:39:58.346 INFO  --- [nio-8080-exec-3] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:39:58.347 DEBUG --- [nio-8080-exec-3] c.s.m.dao.SysUserMapper.selectByUserName : ==>  Preparing: select id, userName, sex, age, mobile_phone, address, `password`, `admin` from sys_user where userName = ?
+2020-07-25 20:39:58.347 DEBUG --- [nio-8080-exec-3] c.s.m.dao.SysUserMapper.selectByUserName : ==> Parameters: test(String)
+2020-07-25 20:39:58.348 DEBUG --- [nio-8080-exec-3] c.s.m.dao.SysUserMapper.selectByUserName : <==      Total: 1
+2020-07-25 20:39:58.349 INFO  --- [nio-8080-exec-3] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:39:58.349 INFO  --- [nio-8080-exec-3] com.starnet.musicmanage.aop.ApiAspect    : |   return=JsonResult(status=200, msg=OK, data=SysUser [Hash = 1473610977, id=8, username=test, sex=1, age=21, mobilePhone=110, address=fuzhoudaxue, password=123456, admin=1, serialVersionUID=1])
+2020-07-25 20:39:58.349 INFO  --- [nio-8080-exec-3] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:39:58.609 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:39:58.609 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : |  url=/users
+2020-07-25 20:39:58.610 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : |  method=GET
+2020-07-25 20:39:58.610 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : |  ip=0:0:0:0:0:0:0:1
+2020-07-25 20:39:58.610 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : |  class_method=com.starnet.musicmanage.controller.UserController.getUserList
+2020-07-25 20:39:58.610 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : |  args={}
+2020-07-25 20:39:58.610 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:39:58.610 DEBUG --- [nio-8080-exec-7] c.s.m.dao.SysUserMapper.selectAll        : ==>  Preparing: select id, userName, sex, age, mobile_phone, address, `password`, `admin` from sys_user
+2020-07-25 20:39:58.611 DEBUG --- [nio-8080-exec-7] c.s.m.dao.SysUserMapper.selectAll        : ==> Parameters: 
+2020-07-25 20:39:58.612 DEBUG --- [nio-8080-exec-7] c.s.m.dao.SysUserMapper.selectAll        : <==      Total: 5
+2020-07-25 20:39:58.613 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:39:58.613 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : |   return=JsonResult(status=200, msg=OK, data=[SysUser [Hash = 1393265394, id=8, username=test, sex=1, age=21, mobilePhone=110, address=fuzhoudaxue, password=123456, admin=1, serialVersionUID=1], SysUser [Hash = 1447660410, id=16, username=hxy, sex=0, age=22, mobilePhone=13615011136, address=fuzhoudaxue, password=123456, admin=0, serialVersionUID=1], SysUser [Hash = 378436891, id=22, username=admin, sex=1, age=1, mobilePhone=123123, address=11111, password=111, admin=null, serialVersionUID=1], SysUser [Hash = 1205645241, id=35, username=adcjkljkl, sex=0, age=21, mobilePhone=1, address=fuzhoudaxue, password=123456, admin=null, serialVersionUID=1], SysUser [Hash = 1209000362, id=36, username=fdafdas, sex=1, age=1, mobilePhone=22, address=456, password=sss, admin=null, serialVersionUID=1]])
+2020-07-25 20:39:58.613 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:41:01.295 INFO  --- [nio-8080-exec-9] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:41:01.296 INFO  --- [nio-8080-exec-9] com.starnet.musicmanage.aop.ApiAspect    : |  url=/user
+2020-07-25 20:41:01.296 INFO  --- [nio-8080-exec-9] com.starnet.musicmanage.aop.ApiAspect    : |  method=DELETE
+2020-07-25 20:41:01.296 INFO  --- [nio-8080-exec-9] com.starnet.musicmanage.aop.ApiAspect    : |  ip=0:0:0:0:0:0:0:1
+2020-07-25 20:41:01.296 INFO  --- [nio-8080-exec-9] com.starnet.musicmanage.aop.ApiAspect    : |  class_method=com.starnet.musicmanage.controller.UserController.delUser
+2020-07-25 20:41:01.296 INFO  --- [nio-8080-exec-9] com.starnet.musicmanage.aop.ApiAspect    : |  args={ids=[35, 36]}
+2020-07-25 20:41:01.296 INFO  --- [nio-8080-exec-9] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:41:01.297 DEBUG --- [nio-8080-exec-9] c.s.m.d.SysUserMapper.deleteByPrimaryKey : ==>  Preparing: delete from sys_user where id = ?
+2020-07-25 20:41:01.298 DEBUG --- [nio-8080-exec-9] c.s.m.d.SysUserMapper.deleteByPrimaryKey : ==> Parameters: 35(Long)
+2020-07-25 20:41:01.416 DEBUG --- [nio-8080-exec-9] c.s.m.d.SysUserMapper.deleteByPrimaryKey : <==    Updates: 1
+2020-07-25 20:41:01.416 DEBUG --- [nio-8080-exec-9] c.s.m.d.SysUserMapper.deleteByPrimaryKey : ==>  Preparing: delete from sys_user where id = ?
+2020-07-25 20:41:01.416 DEBUG --- [nio-8080-exec-9] c.s.m.d.SysUserMapper.deleteByPrimaryKey : ==> Parameters: 36(Long)
+2020-07-25 20:41:01.905 DEBUG --- [nio-8080-exec-9] c.s.m.d.SysUserMapper.deleteByPrimaryKey : <==    Updates: 1
+2020-07-25 20:41:01.907 INFO  --- [nio-8080-exec-9] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:41:01.907 INFO  --- [nio-8080-exec-9] com.starnet.musicmanage.aop.ApiAspect    : |   return=JsonResult(status=200, msg=OK, data=null)
+2020-07-25 20:41:01.907 INFO  --- [nio-8080-exec-9] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:41:05.818 INFO  --- [io-8080-exec-10] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:41:05.818 INFO  --- [io-8080-exec-10] com.starnet.musicmanage.aop.ApiAspect    : |  url=/users
+2020-07-25 20:41:05.818 INFO  --- [io-8080-exec-10] com.starnet.musicmanage.aop.ApiAspect    : |  method=GET
+2020-07-25 20:41:05.819 INFO  --- [io-8080-exec-10] com.starnet.musicmanage.aop.ApiAspect    : |  ip=0:0:0:0:0:0:0:1
+2020-07-25 20:41:05.819 INFO  --- [io-8080-exec-10] com.starnet.musicmanage.aop.ApiAspect    : |  class_method=com.starnet.musicmanage.controller.UserController.getUserList
+2020-07-25 20:41:05.819 INFO  --- [io-8080-exec-10] com.starnet.musicmanage.aop.ApiAspect    : |  args={}
+2020-07-25 20:41:05.820 INFO  --- [io-8080-exec-10] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:41:05.821 DEBUG --- [io-8080-exec-10] c.s.m.dao.SysUserMapper.selectAll        : ==>  Preparing: select id, userName, sex, age, mobile_phone, address, `password`, `admin` from sys_user
+2020-07-25 20:41:05.822 DEBUG --- [io-8080-exec-10] c.s.m.dao.SysUserMapper.selectAll        : ==> Parameters: 
+2020-07-25 20:41:05.824 DEBUG --- [io-8080-exec-10] c.s.m.dao.SysUserMapper.selectAll        : <==      Total: 3
+2020-07-25 20:41:05.824 INFO  --- [io-8080-exec-10] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:41:05.825 INFO  --- [io-8080-exec-10] com.starnet.musicmanage.aop.ApiAspect    : |   return=JsonResult(status=200, msg=OK, data=[SysUser [Hash = 144243898, id=8, username=test, sex=1, age=21, mobilePhone=110, address=fuzhoudaxue, password=123456, admin=1, serialVersionUID=1], SysUser [Hash = 1749526588, id=16, username=hxy, sex=0, age=22, mobilePhone=13615011136, address=fuzhoudaxue, password=123456, admin=0, serialVersionUID=1], SysUser [Hash = 486287658, id=22, username=admin, sex=1, age=1, mobilePhone=123123, address=11111, password=111, admin=null, serialVersionUID=1]])
+2020-07-25 20:41:05.825 INFO  --- [io-8080-exec-10] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:41:12.366 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:41:12.367 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |  url=/musics
+2020-07-25 20:41:12.367 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |  method=GET
+2020-07-25 20:41:12.367 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |  ip=0:0:0:0:0:0:0:1
+2020-07-25 20:41:12.367 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |  class_method=com.starnet.musicmanage.controller.MusicController.getMusicList
+2020-07-25 20:41:12.367 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |  args={}
+2020-07-25 20:41:12.367 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:41:12.373 DEBUG --- [nio-8080-exec-6] c.s.m.dao.MusicMapper.selectAll          : ==>  Preparing: select id, `name`, singer, detail, `status` from music
+2020-07-25 20:41:12.375 DEBUG --- [nio-8080-exec-6] c.s.m.dao.MusicMapper.selectAll          : ==> Parameters: 
+2020-07-25 20:41:12.377 DEBUG --- [nio-8080-exec-6] c.s.m.dao.MusicMapper.selectAll          : <==      Total: 5
+2020-07-25 20:41:12.378 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:41:12.378 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |   return=JsonResult(status=200, msg=OK, data=[Music(id=1, name=watch, singer=Billie Eilish, detail=null, status=0), Music(id=2, name=Falling Down , singer=Muse , detail=null, status=0), Music(id=3, name=Together, singer=Sia, detail=null, status=0), Music(id=4, name=对不起, singer=周杰伦, detail=所属专辑：《依然范特西》, status=1), Music(id=5, name=奉献, singer=韩寒, detail=飞驰人生 电影原声带, status=0)])
+2020-07-25 20:41:12.378 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:41:23.253 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:41:23.253 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : |  url=/androids
+2020-07-25 20:41:23.253 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : |  method=GET
+2020-07-25 20:41:23.254 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : |  ip=0:0:0:0:0:0:0:1
+2020-07-25 20:41:23.254 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : |  class_method=com.starnet.musicmanage.controller.AndroidController.getAllAndroidList
+2020-07-25 20:41:23.254 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : |  args={}
+2020-07-25 20:41:23.254 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:41:23.259 DEBUG --- [nio-8080-exec-7] c.s.m.dao.AndroidMapper.selectAll        : ==>  Preparing: select id, `name`, `status`, `no` from android
+2020-07-25 20:41:23.260 DEBUG --- [nio-8080-exec-7] c.s.m.dao.AndroidMapper.selectAll        : ==> Parameters: 
+2020-07-25 20:41:23.309 DEBUG --- [nio-8080-exec-7] c.s.m.dao.AndroidMapper.selectAll        : <==      Total: 5
+2020-07-25 20:41:23.309 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:41:23.309 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : |   return=JsonResult(status=200, msg=OK, data=[Android(id=1, name=HUAWEI, status=0, no=NO.001), Android(id=2, name=XIAOMI, status=0, no=NO.002), Android(id=4, name=OPPO, status=1, no=OPPO FIND X 2), Android(id=5, name=VIVO, status=0, no=VIVO NEX 3), Android(id=6, name=apple, status=1, no=iphone 11)])
+2020-07-25 20:41:23.309 INFO  --- [nio-8080-exec-7] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:41:52.904 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:41:52.905 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |  url=/linuxes
+2020-07-25 20:41:52.905 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |  method=GET
+2020-07-25 20:41:52.905 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |  ip=0:0:0:0:0:0:0:1
+2020-07-25 20:41:52.905 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |  class_method=com.starnet.musicmanage.controller.LinuxController.getAllLinuxList
+2020-07-25 20:41:52.905 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |  args={}
+2020-07-25 20:41:52.906 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:41:52.913 DEBUG --- [nio-8080-exec-2] c.s.m.dao.LinuxMapper.selectAll          : ==>  Preparing: select id, `name`, `status`, ad, `no` from linux
+2020-07-25 20:41:52.914 DEBUG --- [nio-8080-exec-2] c.s.m.dao.LinuxMapper.selectAll          : ==> Parameters: 
+2020-07-25 20:41:52.915 DEBUG --- [nio-8080-exec-2] c.s.m.dao.LinuxMapper.selectAll          : <==      Total: 1
+2020-07-25 20:41:52.915 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:41:52.916 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |   return=JsonResult(status=200, msg=OK, data=[Linux(id=2, name=服务器2, status=0, ad=限时免费！, no=linux002)])
+2020-07-25 20:41:52.916 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:42:27.242 INFO  --- [nio-8080-exec-1] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:42:27.243 INFO  --- [nio-8080-exec-1] com.starnet.musicmanage.aop.ApiAspect    : |  url=/musics
+2020-07-25 20:42:27.243 INFO  --- [nio-8080-exec-1] com.starnet.musicmanage.aop.ApiAspect    : |  method=GET
+2020-07-25 20:42:27.244 INFO  --- [nio-8080-exec-1] com.starnet.musicmanage.aop.ApiAspect    : |  ip=0:0:0:0:0:0:0:1
+2020-07-25 20:42:27.244 INFO  --- [nio-8080-exec-1] com.starnet.musicmanage.aop.ApiAspect    : |  class_method=com.starnet.musicmanage.controller.MusicController.getMusicList
+2020-07-25 20:42:27.244 INFO  --- [nio-8080-exec-1] com.starnet.musicmanage.aop.ApiAspect    : |  args={}
+2020-07-25 20:42:27.244 INFO  --- [nio-8080-exec-1] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 20:42:27.244 DEBUG --- [nio-8080-exec-1] c.s.m.dao.MusicMapper.selectAll          : ==>  Preparing: select id, `name`, singer, detail, `status` from music
+2020-07-25 20:42:27.246 DEBUG --- [nio-8080-exec-1] c.s.m.dao.MusicMapper.selectAll          : ==> Parameters: 
+2020-07-25 20:42:27.249 DEBUG --- [nio-8080-exec-1] c.s.m.dao.MusicMapper.selectAll          : <==      Total: 5
+2020-07-25 20:42:27.250 INFO  --- [nio-8080-exec-1] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 20:42:27.250 INFO  --- [nio-8080-exec-1] com.starnet.musicmanage.aop.ApiAspect    : |   return=JsonResult(status=200, msg=OK, data=[Music(id=1, name=watch, singer=Billie Eilish, detail=null, status=0), Music(id=2, name=Falling Down , singer=Muse , detail=null, status=0), Music(id=3, name=Together, singer=Sia, detail=null, status=0), Music(id=4, name=对不起, singer=周杰伦, detail=所属专辑：《依然范特西》, status=1), Music(id=5, name=奉献, singer=韩寒, detail=飞驰人生 电影原声带, status=0)])
+2020-07-25 20:42:27.250 INFO  --- [nio-8080-exec-1] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 21:55:35.574 INFO  --- [  restartedMain] c.s.musicmanage.MusicmanageApplication   : Starting MusicmanageApplication on LAPTOP-NAQKQH2N with PID 188344 (C:\Users\SupremacyXXXXX\Desktop\星网锐捷\Codes\MusicManage\target\classes started by SupremacyXXXXX in C:\Users\SupremacyXXXXX\Desktop\星网锐捷\Codes\MusicManage)
+2020-07-25 21:55:35.581 DEBUG --- [  restartedMain] c.s.musicmanage.MusicmanageApplication   : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-25 21:55:35.581 INFO  --- [  restartedMain] c.s.musicmanage.MusicmanageApplication   : No active profile set, falling back to default profiles: default
+2020-07-25 21:55:35.674 INFO  --- [  restartedMain] o.s.boot.devtools.restart.ChangeableUrls : The Class-Path manifest attribute in D:\Maven\repository\com\sun\xml\bind\jaxb-impl\2.1\jaxb-impl-2.1.jar referenced one or more files that do not exist: file:/D:/Maven/repository/com/sun/xml/bind/jaxb-impl/2.1/jaxb-api.jar,file:/D:/Maven/repository/com/sun/xml/bind/jaxb-impl/2.1/activation.jar,file:/D:/Maven/repository/com/sun/xml/bind/jaxb-impl/2.1/jsr173_1.0_api.jar,file:/D:/Maven/repository/com/sun/xml/bind/jaxb-impl/2.1/jaxb1-impl.jar
+2020-07-25 21:55:35.674 INFO  --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-25 21:55:35.674 INFO  --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-25 21:55:38.007 INFO  --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-25 21:55:38.021 INFO  --- [  restartedMain] o.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-25 21:55:38.022 INFO  --- [  restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2020-07-25 21:55:38.023 INFO  --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-25 21:55:38.156 INFO  --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-25 21:55:38.156 INFO  --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2482 ms
+2020-07-25 21:55:39.070 INFO  --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-25 21:55:39.571 INFO  --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-25 21:55:39.591 INFO  --- [  restartedMain] o.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-25 21:55:39.619 INFO  --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-25 21:55:39.630 INFO  --- [  restartedMain] c.s.musicmanage.MusicmanageApplication   : Started MusicmanageApplication in 4.925 seconds (JVM running for 7.098)
+2020-07-25 21:57:26.902 INFO  --- [  restartedMain] c.s.musicmanage.MusicmanageApplication   : Starting MusicmanageApplication on LAPTOP-NAQKQH2N with PID 188500 (C:\Users\SupremacyXXXXX\Desktop\星网锐捷\Codes\MusicManage\target\classes started by SupremacyXXXXX in C:\Users\SupremacyXXXXX\Desktop\星网锐捷\Codes\MusicManage)
+2020-07-25 21:57:26.907 DEBUG --- [  restartedMain] c.s.musicmanage.MusicmanageApplication   : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-25 21:57:26.907 INFO  --- [  restartedMain] c.s.musicmanage.MusicmanageApplication   : No active profile set, falling back to default profiles: default
+2020-07-25 21:57:26.972 INFO  --- [  restartedMain] o.s.boot.devtools.restart.ChangeableUrls : The Class-Path manifest attribute in D:\Maven\repository\com\sun\xml\bind\jaxb-impl\2.1\jaxb-impl-2.1.jar referenced one or more files that do not exist: file:/D:/Maven/repository/com/sun/xml/bind/jaxb-impl/2.1/jaxb-api.jar,file:/D:/Maven/repository/com/sun/xml/bind/jaxb-impl/2.1/activation.jar,file:/D:/Maven/repository/com/sun/xml/bind/jaxb-impl/2.1/jsr173_1.0_api.jar,file:/D:/Maven/repository/com/sun/xml/bind/jaxb-impl/2.1/jaxb1-impl.jar
+2020-07-25 21:57:26.974 INFO  --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-25 21:57:26.975 INFO  --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-25 21:57:28.694 INFO  --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-25 21:57:28.704 INFO  --- [  restartedMain] o.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-25 21:57:28.706 INFO  --- [  restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2020-07-25 21:57:28.706 INFO  --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-25 21:57:28.816 INFO  --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-25 21:57:28.817 INFO  --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1842 ms
+2020-07-25 21:57:29.590 INFO  --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-25 21:57:30.027 INFO  --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-25 21:57:30.047 INFO  --- [  restartedMain] o.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-25 21:57:30.074 INFO  --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-25 21:57:30.086 INFO  --- [  restartedMain] c.s.musicmanage.MusicmanageApplication   : Started MusicmanageApplication in 3.884 seconds (JVM running for 5.624)
+2020-07-25 21:57:48.609 INFO  --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-25 21:57:48.609 INFO  --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-25 21:57:48.624 INFO  --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-07-25 21:57:49.122 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 21:57:49.122 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |  url=/users
+2020-07-25 21:57:49.123 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |  method=GET
+2020-07-25 21:57:49.123 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |  ip=0:0:0:0:0:0:0:1
+2020-07-25 21:57:49.126 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |  class_method=com.starnet.musicmanage.controller.UserController.getUserList
+2020-07-25 21:57:49.126 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |  args={}
+2020-07-25 21:57:49.126 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 21:57:49.202 INFO  --- [nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-25 21:57:49.634 INFO  --- [nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-25 21:57:49.643 DEBUG --- [nio-8080-exec-2] c.s.m.dao.SysUserMapper.selectAll        : ==>  Preparing: select id, userName, sex, age, mobile_phone, address, `password`, `admin` from sys_user
+2020-07-25 21:57:49.672 DEBUG --- [nio-8080-exec-2] c.s.m.dao.SysUserMapper.selectAll        : ==> Parameters: 
+2020-07-25 21:57:49.691 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 21:57:49.692 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |  url=/musics
+2020-07-25 21:57:49.693 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |  method=GET
+2020-07-25 21:57:49.693 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |  ip=0:0:0:0:0:0:0:1
+2020-07-25 21:57:49.693 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |  class_method=com.starnet.musicmanage.controller.MusicController.getMusicList
+2020-07-25 21:57:49.693 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |  args={}
+2020-07-25 21:57:49.693 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : =======================doBefore============================
+2020-07-25 21:57:49.709 DEBUG --- [nio-8080-exec-6] c.s.m.dao.MusicMapper.selectAll          : ==>  Preparing: select id, `name`, singer, detail, `status` from music
+2020-07-25 21:57:49.709 DEBUG --- [nio-8080-exec-6] c.s.m.dao.MusicMapper.selectAll          : ==> Parameters: 
+2020-07-25 21:57:49.718 DEBUG --- [nio-8080-exec-6] c.s.m.dao.MusicMapper.selectAll          : <==      Total: 5
+2020-07-25 21:57:49.718 DEBUG --- [nio-8080-exec-2] c.s.m.dao.SysUserMapper.selectAll        : <==      Total: 3
+2020-07-25 21:57:49.726 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 21:57:49.726 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 21:57:49.726 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : |   return=JsonResult(status=200, msg=OK, data=[Music(id=1, name=watch, singer=Billie Eilish, detail=null, status=0), Music(id=2, name=Falling Down , singer=Muse , detail=null, status=0), Music(id=3, name=Together, singer=Sia, detail=null, status=0), Music(id=4, name=对不起, singer=周杰伦, detail=所属专辑：《依然范特西》, status=1), Music(id=5, name=奉献, singer=韩寒, detail=飞驰人生 电影原声带, status=0)])
+2020-07-25 21:57:49.726 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : |   return=JsonResult(status=200, msg=OK, data=[SysUser [Hash = 2031688382, id=8, username=test, sex=1, age=21, mobilePhone=110, address=fuzhoudaxue, password=123456, admin=1, serialVersionUID=1], SysUser [Hash = 564822314, id=16, username=hxy, sex=0, age=22, mobilePhone=13615011136, address=fuzhoudaxue, password=123456, admin=0, serialVersionUID=1], SysUser [Hash = 1197083103, id=22, username=admin, sex=1, age=1, mobilePhone=123123, address=11111, password=111, admin=null, serialVersionUID=1]])
+2020-07-25 21:57:49.727 INFO  --- [nio-8080-exec-6] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================
+2020-07-25 21:57:49.727 INFO  --- [nio-8080-exec-2] com.starnet.musicmanage.aop.ApiAspect    : =======================afterReturning============================

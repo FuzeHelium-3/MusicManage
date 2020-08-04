@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+        <bean id="testController" class="com.starnet.usermanager.controller.TestController"></bean>
+        <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+            <property name="mappings">
+                <props>
+                    <prop key="/testController.do">testController</prop>
+                </props>
+            </property>
+        </bean>
+
+        <bean id="dbUtils" class="com.starnet.usermanager.utils.DBUtils"
+              factory-method="getInstance" init-method="init">
+        </bean>
+        <bean id="sysUserDao" class="com.starnet.usermanager.dao.SysUserDAO">
+            <property name="dbUtils">
+                <ref bean="dbUtils"/>
+            </property>
+        </bean>
+        <bean id="sysUserService" class="com.starnet.usermanager.service.SysUserServicecImpl">
+            <property name="sysUserDAO">
+                <ref bean="sysUserDao"/>
+            </property>
+        </bean>
+        <bean id="addUserController" class="com.starnet.usermanager.controller.AddUserController">
+            <property name="sysUserService">
+                <ref bean="sysUserService"/>
+            </property>
+        </bean>
+
+        <bean id="getUserListController" class="com.starnet.usermanager.controller.GetUserListController">
+            <property name="sysUserService">
+                <ref bean="sysUserService"/>
+            </property>
+        </bean>
+
+        <bean id="delUserController" class="com.starnet.usermanager.controller.DelUserController">
+            <property name="sysUserService">
+                <ref bean="sysUserService"/>
+            </property>
+        </bean>
+
+        <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+            <property name="mappings">
+                <props>
+                    <prop key="/addUserController.do">
+                        addUserController
+                    </prop>
+                    <prop key="/loginController.do">
+                        loginController
+                    </prop>
+                    <prop key="/listUserController.do">
+                        listUserController
+                    </prop>
+                    <prop key="/getUserListController.do">
+                        getUserListController
+                    </prop>
+                    <prop key="/delUserController.do">
+                        delUserController
+                    </prop>
+                </props>
+            </property>
+        </bean>
+
+        <bean id="listUserController" class="com.starnet.usermanager.controller.ListUserController">
+
+        </bean>
+
+        <bean id="loginController" class="com.starnet.usermanager.controller.LoginController">
+            <property name="sysUserService">
+                <ref bean="sysUserService"/>
+            </property>
+        </bean>
+        <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+            <property name="viewClass">
+                <value>
+                    org.springframework.web.servlet.view.InternalResourceView
+                </value>
+            </property>
+            <property name="prefix" value="/"/>
+            <property name="suffix" value=".jsp"/>
+        </bean>
+
+</beans>
