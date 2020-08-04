@@ -25,13 +25,8 @@ public class AndroidController {
 
     @RequestMapping(value = "/androids", method = RequestMethod.GET)
     public JsonResult getAllAndroidList(){
-        try {
-            List<Android> androidList = androidService.getAndroidList();
-            return JsonResult.ok(androidList);
-        } catch (Exception e){
-            e.printStackTrace();
-            return JsonResult.errorMsg("获取安卓设备列表失败！");
-        }
+        System.out.println("test");
+        return JsonResult.ok();
     }
 
     @RequestMapping(value = "/android", method = RequestMethod.POST)
