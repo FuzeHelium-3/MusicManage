@@ -8,6 +8,8 @@ public class MusicmanageApplication {
 
     public static void main(String[] args) {
         System.out.println("test for branch test");
+        System.out.println("test for branch test");
+        System.out.println("test for branch test");
     }
 
 }
