@@ -12,7 +12,7 @@ package com.starnet.musicmanage;
 public class test3 {
 
     public void test(){
-        System.out.println("合并测试");
+        System.out.println("合并测试 LCC");
     }
 
 }
